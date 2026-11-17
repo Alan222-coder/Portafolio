@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Portfolio de Alan Montero: desarrollo de software, sistemas, automatización, robótica y tecnología aplicada.">
+  <title>Alan Montero | Software & Systems Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          ink: '#080b12', panel: '#101722', line: '#243244',
+          cyan: '#42d6e8', blue: '#5b8cff', muted: '#9aa9ba'
+        },
+        fontFamily: { sans: ['Inter','sans-serif'], mono: ['DM Mono','monospace'] }
+      }}
+    }
+  </script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="font-sans antialiased">
+  <div class="fixed top-0 left-0 right-0 z-50 h-[2px] bg-white/5"><div id="progress" class="h-full w-0 bg-gradient-to-r from-cyan to-blue"></div></div>
+
+  <header class="fixed top-[2px] inset-x-0 z-40 border-b border-white/5 bg-ink/85 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Ir al inicio">
+        <span class="grid h-9 w-9 place-items-center rounded-lg border border-cyan/30 bg-cyan/10 font-mono text-sm font-bold text-cyan">AM</span>
+        <span class="font-mono text-sm font-bold tracking-[.12em] text-white">ALAN<span class="text-cyan">.DEV</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-xs text-slate-400 md:flex">
+        <a class="hover:text-cyan" href="#perfil">Perfil</a>
+        <a class="hover:text-cyan" href="#tecnologias">Tecnologías</a>
+        <a class="hover:text-cyan" href="#proyectos">Proyectos</a>
+        <a class="hover:text-cyan" href="#fortalezas">Mi forma de trabajar</a>
+        <a class="hover:text-cyan" href="#automotor">Sector automotor</a>
+        <a class="hover:text-cyan" href="#contacto">Contacto</a>
+      </nav>
+      <a href="https://github.com/Alan222-coder" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-cyan/30 px-3 py-2 font-mono text-[11px] text-cyan transition hover:bg-cyan/10">GITHUB ↗</a>
+    </div>
+  </header>
+
+  <main id="inicio" class="relative">
+    <section class="mx-auto grid min-h-[92vh] max-w-7xl items-center gap-12 px-5 pb-20 pt-32 lg:grid-cols-[1.12fr_.88fr] lg:px-8">
+      <div class="reveal">
+        <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan/20 bg-cyan/5 px-4 py-2 font-mono text-[10px] tracking-[.13em] text-cyan">
+          <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan"></span>
+          SOFTWARE · SYSTEMS · AUTOMATION
+        </div>
+        <p class="mb-4 font-mono text-sm text-slate-400">Hola, soy Alan Montero.</p>
+        <h1 class="max-w-3xl text-5xl font-extrabold leading-[1.04] tracking-[-.055em] text-white sm:text-6xl lg:text-7xl">
+          Desarrollo software para <span class="gradient-text">resolver problemas reales.</span>
+        </h1>
+        <p class="mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
+          Desarrollador junior orientado a programación y sistemas. Construyo proyectos propios que conectan software, lógica, automatización y hardware: desde aplicaciones web y herramientas de escritorio hasta prototipos de robótica, CAD e impresión 3D.
+        </p>
+        <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-500">
+          Me interesa especialmente cómo el software puede mejorar procesos técnicos e industriales, incluyendo diagnóstico, herramientas internas, integración de dispositivos y tecnología aplicada al sector automotor.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#proyectos" class="rounded-lg bg-cyan px-5 py-3 text-sm font-bold text-ink transition hover:bg-white">Explorar proyectos <span aria-hidden="true">→</span></a>
+          <a href="https://github.com/Alan222-coder" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-slate-600 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan hover:text-cyan">Ver GitHub ↗</a>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6 font-mono text-[10px] uppercase tracking-wider text-slate-500">
+          <span>Argentina · Córdoba</span>
+          <span>Desarrollo independiente</span>
+          <span>Aprendizaje continuo</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="glass relative overflow-hidden rounded-2xl p-5 sm:p-7">
+          <div class="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-cyan/10 blur-3xl"></div>
+          <div class="relative flex items-center justify-between border-b border-white/10 pb-4">
+            <div class="flex gap-1.5"><i class="h-2.5 w-2.5 rounded-full bg-rose-400/80"></i><i class="h-2.5 w-2.5 rounded-full bg-amber-300/80"></i><i class="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></i></div>
+            <span class="font-mono text-[10px] text-slate-500">developer_profile.py</span>
+          </div>
+          <div class="relative space-y-3 py-7 font-mono text-xs leading-6 sm:text-sm">
+            <p><span class="text-violet-300">class</span> <span class="text-cyan">Developer</span>:</p>
+            <p class="pl-5"><span class="text-violet-300">def</span> <span class="text-amber-200">__init__</span>(self):</p>
+            <p class="pl-10">self.name = <span class="text-emerald-300">"Alan Montero"</span></p>
+            <p class="pl-10">self.focus = <span class="text-emerald-300">"Software & Systems"</span></p>
+            <p class="pl-10">self.languages = [</p>
+            <p class="pl-16 text-cyan">"Python", "JavaScript", "C++"</p>
+            <p class="pl-10">]</p>
+            <p class="pl-5"><span class="text-violet-300">def</span> <span class="text-amber-200">build</span>(self, idea):</p>
+            <p class="pl-10"><span class="text-violet-300">return</span> <span class="text-emerald-300">"analyze → design → implement → test"</span></p>
+          </div>
+          <div class="relative grid grid-cols-2 gap-3 border-t border-white/10 pt-5">
+            <div class="rounded-xl border border-white/5 bg-white/[.03] p-4"><p class="font-mono text-xl font-bold text-cyan">01</p><p class="mt-1 text-[10px] uppercase tracking-wider text-slate-500">Software & apps</p></div>
+            <div class="rounded-xl border border-white/5 bg-white/[.03] p-4"><p class="font-mono text-xl font-bold text-blue-300">02</p><p class="mt-1 text-[10px] uppercase tracking-wider text-slate-500">Hardware & systems</p></div>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-3 gap-3">
+          <div class="glass rounded-xl p-3 text-center"><p class="font-mono text-cyan">PY</p><p class="mt-1 text-[10px] text-slate-500">Backend</p></div>
+          <div class="glass rounded-xl p-3 text-center"><p class="font-mono text-cyan">JS</p><p class="mt-1 text-[10px] text-slate-500">Web</p></div>
+          <div class="glass rounded-xl p-3 text-center"><p class="font-mono text-cyan">I/O</p><p class="mt-1 text-[10px] text-slate-500">Hardware</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="perfil" class="border-y border-white/5 bg-white/[.015] py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal max-w-3xl">
+          <p class="eyebrow">// 01 — Perfil profesional</p>
+          <h2 class="section-title mt-4">Una mirada orientada a <span class="gradient-text">sistemas completos.</span></h2>
+          <p class="mt-6 leading-8 text-slate-400">
+            Mi forma de aprender programación es construir. Trabajo en proyectos donde necesito entender el problema, dividirlo en componentes, elegir herramientas, implementar una solución y corregirla mediante pruebas. Me interesa tanto el código como el funcionamiento del sistema en el que se integra.
+          </p>
+        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="glass rounded-2xl p-6">
+            <div class="mb-5 grid h-11 w-11 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-cyan">01</div>
+            <h3 class="text-lg font-bold text-white">Desarrollo de software</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Aplicaciones, APIs, lógica de negocio, persistencia de datos, interfaces y herramientas que simplifican tareas concretas.</p>
+          </article>
+          <article class="glass rounded-2xl p-6">
+            <div class="mb-5 grid h-11 w-11 place-items-center rounded-xl border border-blue-300/20 bg-blue-300/10 font-mono text-blue-300">02</div>
+            <h3 class="text-lg font-bold text-white">Integración tecnológica</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Interés práctico en conectar software con microcontroladores, sensores, motores, impresoras 3D y dispositivos físicos.</p>
+          </article>
+          <article class="glass rounded-2xl p-6">
+            <div class="mb-5 grid h-11 w-11 place-items-center rounded-xl border border-violet-300/20 bg-violet-300/10 font-mono text-violet-300">03</div>
+            <h3 class="text-lg font-bold text-white">Resolución de problemas</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Análisis de errores, experimentación, depuración, documentación de cambios y mejora iterativa de prototipos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow">// 02 — Tecnologías y herramientas</p>
+          <h2 class="section-title mt-4">Stack técnico</h2>
+          <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-400">Tecnologías utilizadas en proyectos personales, prototipos y aprendizaje. La lista refleja experiencia práctica de distinto alcance; no implica dominio avanzado de cada herramienta.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-semibold text-white">Lenguajes</h3>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">C++</span><span class="tag">GDScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+          </div>
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-semibold text-white">Backend y datos</h3>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">FastAPI</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQLAlchemy</span><span class="tag">SQLite</span><span class="tag">JWT</span><span class="tag">bcryptjs</span><span class="tag">Jinja</span></div>
+          </div>
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-semibold text-white">Herramientas</h3>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Godot</span><span class="tag">OrcaSlicer</span><span class="tag">Creality Print</span></div>
+          </div>
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-semibold text-white">Hardware y diseño</h3>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">ESP32</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span class="tag">Sensores</span><span class="tag">Motores DC</span><span class="tag">CAD</span><span class="tag">Impresión 3D</span><span class="tag">Escaneo 3D</span></div>
+          </div>
+        </div>
+        <div class="mt-6 rounded-xl border border-white/10 bg-white/[.02] p-5 text-xs leading-6 text-slate-500">
+          <strong class="text-slate-300">Criterio de presentación:</strong> Python, JavaScript, desarrollo web y control de versiones son parte de mi trabajo de programación. Las tecnologías de electrónica, CAD y fabricación digital corresponden a proyectos prácticos y experimentación; no las presento como experiencia profesional industrial.
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="border-y border-white/5 bg-white/[.015] py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow">// 03 — Proyectos seleccionados</p>
+          <h2 class="section-title mt-4">Código aplicado a <span class="gradient-text">problemas concretos.</span></h2>
+          <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-400">Una selección de desarrollos propios y experiencias técnicas. Los estados indican el alcance conocido de cada trabajo.</p>
+        </div>
+
+        <div class="mt-10 grid gap-5 lg:grid-cols-2">
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status dev">En desarrollo</span><span class="font-mono text-[10px] text-slate-600">01 / CAD SOFTWARE</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">N</div><div><h3 class="text-xl font-bold text-white">NovaCAD</h3><p class="text-xs text-slate-500">Sistema CAD paramétrico propio</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Desarrollo de un entorno de diseño asistido por computadora inspirado en flujos de trabajo CAD profesionales. El objetivo es construir una experiencia de bocetado y modelado donde la geometría, las restricciones y las operaciones estén conectadas a un motor paramétrico.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>Motor de restricciones geométricas y solucionador matemático.</li>
+              <li><span class="mr-2 text-cyan">›</span>Dimensiones paramétricas, incluyendo cotas lineales y angulares.</li>
+              <li><span class="mr-2 text-cyan">›</span>Persistencia de datos de bocetos en JSON e integración con Undo/Redo.</li>
+              <li><span class="mr-2 text-cyan">›</span>Trabajo en perfiles cerrados, regiones interiores y operaciones de extrusión.</li>
+              <li><span class="mr-2 text-cyan">›</span>Mejoras de interacción, precisión de dibujo, ajuste geométrico y visualización.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">Geometría computacional</span><span class="tag">Solver</span><span class="tag">JSON</span><span class="tag">UI/UX</span><span class="tag">Modelado 3D</span></div>
+            <p class="mt-5 border-t border-white/10 pt-4 text-xs leading-6 text-slate-500">Desafío técnico: mantener consistencia entre geometría, restricciones, dimensiones y operaciones de modelado.</p>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status dev">En desarrollo</span><span class="font-mono text-[10px] text-slate-600">02 / WEB BACKEND</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-blue-300/20 bg-blue-300/10 font-mono text-lg font-bold text-blue-300">R</div><div><h3 class="text-xl font-bold text-white">Rutina AI</h3><p class="text-xs text-slate-500">Aplicación de organización personal</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Aplicación web para organizar actividades y visualizar tareas, calendario y estados de energía. El proyecto permite trabajar sobre una arquitectura backend en Python y conectar la lógica de la aplicación con una interfaz web.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>API y servidor desarrollados con FastAPI.</li>
+              <li><span class="mr-2 text-cyan">›</span>Modelado y acceso a datos mediante SQLAlchemy.</li>
+              <li><span class="mr-2 text-cyan">›</span>Renderizado de vistas con Jinja y estructura HTML/CSS.</li>
+              <li><span class="mr-2 text-cyan">›</span>Organización de tareas, calendario y estados de energía.</li>
+              <li><span class="mr-2 text-cyan">›</span>Interfaz de usuario con tema oscuro.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">Jinja</span><span class="tag">HTML/CSS</span></div>
+            <p class="mt-5 border-t border-white/10 pt-4 text-xs leading-6 text-slate-500">Desafío técnico: organizar componentes backend, modelos de datos y presentación en una aplicación coherente.</p>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status dev">Desarrollo iniciado</span><span class="font-mono text-[10px] text-slate-600">03 / JAVASCRIPT BACKEND</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-violet-300/20 bg-violet-300/10 font-mono text-lg font-bold text-violet-300">S</div><div><h3 class="text-xl font-bold text-white">Sanify</h3><p class="text-xs text-slate-500">Aplicación con backend y autenticación</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Proyecto de software trabajado con un stack JavaScript orientado al desarrollo de una aplicación con persistencia local y mecanismos de autenticación. El repositorio registra distintas iteraciones de desarrollo y versionado.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>Servidor y rutas mediante Node.js y Express.</li>
+              <li><span class="mr-2 text-cyan">›</span>Persistencia con SQLite y better-sqlite3.</li>
+              <li><span class="mr-2 text-cyan">›</span>Autenticación basada en tokens JWT.</li>
+              <li><span class="mr-2 text-cyan">›</span>Hash de contraseñas con bcryptjs.</li>
+              <li><span class="mr-2 text-cyan">›</span>Organización del proyecto y control de versiones.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQLite</span><span class="tag">JWT</span><span class="tag">bcryptjs</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/Sanify-" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+            <p class="mt-5 border-t border-white/10 pt-4 text-xs leading-6 text-slate-500">Desafío técnico: estructurar un backend, gestionar datos y aplicar fundamentos de autenticación.</p>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Herramienta personal</span><span class="font-mono text-[10px] text-slate-600">04 / DEVELOPER TOOLING</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">G</div><div><h3 class="text-xl font-bold text-white">Easy Git Uploader</h3><p class="text-xs text-slate-500">Utilidad para publicar proyectos</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Herramienta concebida para simplificar la publicación de proyectos en GitHub mediante una interfaz gráfica, reduciendo la necesidad de ejecutar manualmente cada comando de Git.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>Flujo simplificado para subir proyectos.</li>
+              <li><span class="mr-2 text-cyan">›</span>Enfoque en accesibilidad y experiencia de usuario.</li>
+              <li><span class="mr-2 text-cyan">›</span>Automatización de pasos repetitivos del flujo de publicación.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">GUI</span></div>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status proto">Prototipo / experiencia práctica</span><span class="font-mono text-[10px] text-slate-600">05 / ROBOTICS</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-amber-300/20 bg-amber-300/10 font-mono text-lg font-bold text-amber-200">IB</div><div><h3 class="text-xl font-bold text-white">Iron Bot</h3><p class="text-xs text-slate-500">Proyecto de robótica</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Experiencia de desarrollo de un robot que integró programación, electrónica y componentes físicos. El trabajo incluyó la resolución de problemas de integración y el enfoque en el comportamiento del sistema completo.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>Integración de componentes electrónicos y mecánicos.</li>
+              <li><span class="mr-2 text-cyan">›</span>Trabajo con programación y control de hardware.</li>
+              <li><span class="mr-2 text-cyan">›</span>Participación en una experiencia de competencia de robótica.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">Robótica</span><span class="tag">Electrónica</span><span class="tag">Programación</span><span class="tag">Integración</span></div>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status proto">Prototipo y pruebas</span><span class="font-mono text-[10px] text-slate-600">06 / EMBEDDED SYSTEMS</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-blue-300/20 bg-blue-300/10 font-mono text-lg font-bold text-blue-300">R</div><div><h3 class="text-xl font-bold text-white">Robot autónomo para competencia</h3><p class="text-xs text-slate-500">Control, sensores y movimiento</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Diseño y experimentación con un robot móvil para recorrer un entorno delimitado. El proyecto se centró en la integración entre sensores, motores, estructura mecánica y lógica de movimiento.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>Diseño compacto con cuatro ruedas omnidireccionales.</li>
+              <li><span class="mr-2 text-cyan">›</span>Planificación de lectura de tres sensores ultrasónicos.</li>
+              <li><span class="mr-2 text-cyan">›</span>Evaluación de drivers DRV8833 y L298N.</li>
+              <li><span class="mr-2 text-cyan">›</span>Pruebas y planificación de calibración del movimiento según la superficie.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">C++</span><span class="tag">Arduino / ESP32</span><span class="tag">Ultrasonido</span><span class="tag">Motores DC</span></div>
+            <p class="mt-5 border-t border-white/10 pt-4 text-xs leading-6 text-slate-500">Algunas integraciones y calibraciones quedaron como trabajo de experimentación; no se presenta como un sistema industrial terminado.</p>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Proyecto de aprendizaje</span><span class="font-mono text-[10px] text-slate-600">07 / GAME DEVELOPMENT</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-rose-300/20 bg-rose-300/10 font-mono text-lg font-bold text-rose-300">E</div><div><h3 class="text-xl font-bold text-white">El Eternauta</h3><p class="text-xs text-slate-500">Videojuego experimental en Godot</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Proyecto de videojuego independiente trabajado con Godot Engine y GDScript. Sirvió como espacio de práctica para lógica interactiva, mecánicas, eventos y comportamiento de elementos dentro de una escena.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">Godot Engine</span><span class="tag">GDScript</span><span class="tag">Lógica interactiva</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/Godot-El-eternauta" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Emprendimiento técnico</span><span class="font-mono text-[10px] text-slate-600">08 / DIGITAL MANUFACTURING</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-emerald-300/20 bg-emerald-300/10 font-mono text-lg font-bold text-emerald-300">G3</div><div><h3 class="text-xl font-bold text-white">Guarida 3D</h3><p class="text-xs text-slate-500">Diseño y fabricación digital</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Emprendimiento personal vinculado al diseño y la fabricación mediante impresión 3D. La experiencia complementa mi perfil de programación con procesos de preparación de modelos, configuración de máquinas, resolución de fallas y planificación de producción.</p>
+            <ul class="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span>Producción de piezas personalizadas y lotes de artículos multicolor.</li>
+              <li><span class="mr-2 text-cyan">›</span>Uso de Creality Hi Combo y Ender 5 S1.</li>
+              <li><span class="mr-2 text-cyan">›</span>Ajuste de parámetros, materiales, adherencia y calidad de impresión.</li>
+              <li><span class="mr-2 text-cyan">›</span>Estimación de tiempos, consumo de material y costos.</li>
+              <li><span class="mr-2 text-cyan">›</span>Exploración de escaneo 3D y digitalización de componentes mecánicos.</li>
+            </ul>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">CAD</span><span class="tag">Impresión 3D</span><span class="tag">Creality</span><span class="tag">Slicing</span><span class="tag">Prototipado</span></div>
+          </article>
+        </div>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Repositorio público</span><span class="font-mono text-[10px] text-slate-600">09 / WEB · AUTOMOTOR</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">C</div><div><h3 class="text-xl font-bold text-white">CNH Test Página</h3><p class="text-xs text-slate-500">Proyecto web</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Página web de prueba vinculada a CNH. Repositorio de desarrollo web que forma parte de mi exploración de soluciones digitales para el ámbito automotor.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Desarrollo independiente</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/CNH-test-pagina-" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Repositorio público</span><span class="font-mono text-[10px] text-slate-600">10 / CAD · DISEÑO TÉCNICO</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">A</div><div><h3 class="text-xl font-bold text-white">AutoCAD</h3><p class="text-xs text-slate-500">Proyecto CAD</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Repositorio relacionado con CAD y herramientas de diseño técnico. Lo incluyo como parte de mi interés por el modelado y el software aplicado a ingeniería.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Desarrollo independiente</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/AutoCAD" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Repositorio público</span><span class="font-mono text-[10px] text-slate-600">11 / GIT · HERRAMIENTAS</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">V</div><div><h3 class="text-xl font-bold text-white">Vinculador de repositorios</h3><p class="text-xs text-slate-500">Herramienta de desarrollo</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Proyecto orientado a trabajar con repositorios y facilitar su vinculación dentro de un flujo de desarrollo. Complementa mi interés por automatizar tareas de programación.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Desarrollo independiente</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/Vinculador-de-repositorios" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Repositorio público</span><span class="font-mono text-[10px] text-slate-600">12 / WEB · INTERFAZ</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">F</div><div><h3 class="text-xl font-bold text-white">Página Web de FCA</h3><p class="text-xs text-slate-500">Desarrollo web</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Proyecto de desarrollo de una página web para FCA. Forma parte de mi práctica en construcción de interfaces y organización de contenido web.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Desarrollo independiente</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/Pagina-Web-de-FCA" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Repositorio público</span><span class="font-mono text-[10px] text-slate-600">13 / PROYECTO PERSONAL</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">J</div><div><h3 class="text-xl font-bold text-white">Juan Moreira</h3><p class="text-xs text-slate-500">Proyecto independiente</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Repositorio de un proyecto identificado como Juan Moreira. Lo presento como trabajo de desarrollo independiente; los detalles técnicos se pueden consultar directamente en GitHub.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Desarrollo independiente</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/Juan-moreira" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+          <article class="project-card glass rounded-2xl p-6 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3"><span class="status comp">Repositorio público</span><span class="font-mono text-[10px] text-slate-600">14 / WEB · INTERFAZ</span></div>
+            <div class="mt-6 flex items-center gap-3"><div class="grid h-12 w-12 place-items-center rounded-xl border border-cyan/20 bg-cyan/10 font-mono text-lg font-bold text-cyan">J</div><div><h3 class="text-xl font-bold text-white">Página Web Juan Moreira</h3><p class="text-xs text-slate-500">Desarrollo web</p></div></div>
+            <p class="mt-5 text-sm leading-7 text-slate-400">Proyecto web asociado a Juan Moreira, enfocado en la creación de una presencia digital mediante una página propia.</p>
+            <div class="mt-6 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Desarrollo independiente</span></div>
+            <a class="mt-6 inline-flex font-mono text-xs text-cyan hover:text-white" href="https://github.com/Alan222-coder/Pagina-Web-Juan-Moreira" target="_blank" rel="noopener noreferrer">VER REPOSITORIO ↗</a>
+          </article>
+
+        <div class="mt-8 flex flex-col items-start justify-between gap-4 rounded-2xl border border-cyan/15 bg-cyan/[.04] p-6 sm:flex-row sm:items-center">
+          <div><p class="font-semibold text-white">Código y repositorios</p><p class="mt-1 text-sm text-slate-400">Consultá los repositorios disponibles y la evolución de mis proyectos.</p></div>
+          <a href="https://github.com/Alan222-coder?tab=repositories" target="_blank" rel="noopener noreferrer" class="shrink-0 rounded-lg border border-cyan/30 px-4 py-2.5 font-mono text-xs text-cyan hover:bg-cyan/10">ABRIR GITHUB ↗</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="fortalezas" class="border-y border-white/5 bg-white/[.015] py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal max-w-3xl">
+          <p class="eyebrow">// 06 — Fortalezas y aspectos a mejorar</p>
+          <h2 class="section-title mt-4">Mi manera de trabajar: <span class="gradient-text">crear, probar y mejorar.</span></h2>
+          <p class="mt-6 text-sm leading-8 text-slate-400">Me caracterizo por la iniciativa para empezar proyectos, explorar tecnologías y cuidar tanto el funcionamiento como la presentación de lo que desarrollo. También identifico hábitos que necesito mejorar para trabajar con más foco y previsibilidad.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
+          <article class="glass rounded-2xl p-6">
+            <p class="font-mono text-xs text-cyan">FORTALEZAS</p>
+            <h3 class="mt-3 text-lg font-bold text-white">Lo que aporto al equipo</h3>
+            <ul class="mt-5 space-y-3 text-sm leading-7 text-slate-400">
+              <li><span class="mr-2 text-cyan">›</span><strong class="text-slate-200">Iniciativa y curiosidad técnica:</strong> suelo investigar herramientas nuevas y convertir ideas en prototipos o proyectos concretos.</li>
+              <li><span class="mr-2 text-cyan">›</span><strong class="text-slate-200">Cuidado por el diseño:</strong> busco que las interfaces y los productos se vean prolijos, atractivos y coherentes, además de funcionar correctamente.</li>
+              <li><span class="mr-2 text-cyan">›</span><strong class="text-slate-200">Visión multidisciplinaria:</strong> me interesa conectar programación, diseño, electrónica, CAD y fabricación digital.</li>
+              <li><span class="mr-2 text-cyan">›</span><strong class="text-slate-200">Persistencia para resolver problemas:</strong> pruebo alternativas, analizo fallas y ajusto la solución hasta entender mejor qué está ocurriendo.</li>
+              <li><span class="mr-2 text-cyan">›</span><strong class="text-slate-200">Aprendizaje autónomo:</strong> utilizo documentación, experimentación y herramientas de IA como apoyo, revisando y validando lo que incorporo.</li>
+            </ul>
+          </article>
+          <article class="glass rounded-2xl p-6">
+            <p class="font-mono text-xs text-amber-200">ASPECTOS A MEJORAR</p>
+            <h3 class="mt-3 text-lg font-bold text-white">En qué estoy trabajando</h3>
+            <ul class="mt-5 space-y-3 text-sm leading-7 text-slate-400">
+              <li><span class="mr-2 text-amber-200">›</span><strong class="text-slate-200">Demasiados proyectos en paralelo:</strong> mi curiosidad hace que empiece varias ideas a la vez. Estoy trabajando en limitar el trabajo simultáneo y priorizar por impacto y urgencia.</li>
+              <li><span class="mr-2 text-amber-200">›</span><strong class="text-slate-200">Cerrar antes de abrir algo nuevo:</strong> necesito reservar tiempo para terminar, probar y documentar proyectos, en lugar de pasar demasiado pronto a la siguiente idea.</li>
+              <li><span class="mr-2 text-amber-200">›</span><strong class="text-slate-200">Equilibrar estética y funcionalidad:</strong> puedo dedicar mucho tiempo a pulir la apariencia. Estoy aprendiendo a definir primero una versión funcional y después mejorar el diseño según prioridades.</li>
+              <li><span class="mr-2 text-amber-200">›</span><strong class="text-slate-200">Planificación y estimaciones:</strong> quiero mejorar la división de tareas, el cálculo de tiempos y el seguimiento del progreso para trabajar con objetivos más claros.</li>
+              <li><span class="mr-2 text-amber-200">›</span><strong class="text-slate-200">Profundidad técnica:</strong> al explorar distintas áreas, todavía tengo conocimientos por consolidar. Busco fortalecer fundamentos, pruebas, documentación y buenas prácticas.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="mt-6 max-w-4xl text-xs leading-6 text-slate-500">No considero estos puntos como limitaciones permanentes, sino como aspectos concretos de mi forma de trabajar que estoy aprendiendo a gestionar. En un equipo, me resulta útil trabajar con prioridades claras, objetivos por etapas y revisiones frecuentes.</p>
+      </div>
+    </section>
+
+    <section id="automotor" class="py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal max-w-3xl">
+          <p class="eyebrow">// 05 — Interés en tecnología automotor</p>
+          <h2 class="section-title mt-4">Software conectado con el <span class="gradient-text">mundo físico.</span></h2>
+          <p class="mt-6 text-sm leading-8 text-slate-400">Me interesa aplicar mis conocimientos de programación al desarrollo de soluciones para el sector automotor. Mi experiencia actual es principalmente de proyectos personales, académicos y experimentales; estas son áreas en las que busco seguir aprendiendo y aportar.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
+          <article class="glass rounded-2xl p-6">
+            <p class="font-mono text-xs text-cyan">ÁREA 01</p>
+            <h3 class="mt-3 text-lg font-bold text-white">Herramientas de diagnóstico y soporte</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Aplicaciones para registrar información, visualizar datos, asistir en procedimientos técnicos y facilitar el trabajo de diagnóstico y mantenimiento.</p>
+          </article>
+          <article class="glass rounded-2xl p-6">
+            <p class="font-mono text-xs text-cyan">ÁREA 02</p>
+            <h3 class="mt-3 text-lg font-bold text-white">Integración de software y hardware</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Sistemas que conecten aplicaciones con sensores, microcontroladores y dispositivos físicos para adquirir datos, automatizar tareas y controlar procesos.</p>
+          </article>
+          <article class="glass rounded-2xl p-6">
+            <p class="font-mono text-xs text-cyan">ÁREA 03</p>
+            <h3 class="mt-3 text-lg font-bold text-white">Digitalización y herramientas CAD</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Modelado paramétrico, escaneo 3D y tratamiento digital de piezas mecánicas, con interés en procesos de ingeniería inversa y prototipado.</p>
+          </article>
+          <article class="glass rounded-2xl p-6">
+            <p class="font-mono text-xs text-cyan">ÁREA 04</p>
+            <h3 class="mt-3 text-lg font-bold text-white">Automatización y análisis de datos</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">Desarrollo de utilidades internas, procesamiento de información y automatización de tareas repetitivas para mejorar flujos de trabajo técnicos.</p>
+          </article>
+        </div>
+        <div class="mt-7 rounded-2xl border border-blue-300/15 bg-blue-300/[.04] p-6">
+          <h3 class="font-semibold text-white">Qué puedo aportar como perfil junior</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-400">Una base práctica de programación, iniciativa para investigar tecnologías nuevas, experiencia construyendo proyectos de principio a fin y facilidad para aprender en contextos multidisciplinarios. Me interesa incorporarme a un equipo donde pueda trabajar con código real, recibir revisión técnica y crecer con buenas prácticas de desarrollo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/5 bg-white/[.015] py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow">// 07 — Forma de trabajo</p>
+          <h2 class="section-title mt-4">Cómo abordo un desarrollo</h2>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="glass rounded-xl p-5"><p class="font-mono text-2xl text-cyan">01</p><h3 class="mt-4 font-semibold text-white">Entender</h3><p class="mt-2 text-sm leading-6 text-slate-400">Identificar el problema, los requisitos y las limitaciones del sistema.</p></div>
+          <div class="glass rounded-xl p-5"><p class="font-mono text-2xl text-cyan">02</p><h3 class="mt-4 font-semibold text-white">Diseñar</h3><p class="mt-2 text-sm leading-6 text-slate-400">Separar responsabilidades, definir datos y elegir herramientas adecuadas.</p></div>
+          <div class="glass rounded-xl p-5"><p class="font-mono text-2xl text-cyan">03</p><h3 class="mt-4 font-semibold text-white">Implementar</h3><p class="mt-2 text-sm leading-6 text-slate-400">Construir por etapas, utilizar Git y documentar decisiones relevantes.</p></div>
+          <div class="glass rounded-xl p-5"><p class="font-mono text-2xl text-cyan">04</p><h3 class="mt-4 font-semibold text-white">Probar y mejorar</h3><p class="mt-2 text-sm leading-6 text-slate-400">Reproducir errores, depurar, validar cambios y continuar iterando.</p></div>
+        </div>
+        <p class="mt-6 max-w-3xl text-xs leading-6 text-slate-500">Utilizo herramientas de IA como apoyo para investigar, explorar alternativas y acelerar tareas, manteniendo la responsabilidad de comprender, revisar y validar el código que incorporo.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-24">
+      <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow">// 08 — Contacto</p>
+          <h2 class="section-title mt-4">Hablemos de <span class="gradient-text">software y tecnología.</span></h2>
+          <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-400">Estoy interesado en oportunidades junior, prácticas y colaboraciones donde pueda aportar desde la programación y seguir desarrollándome en equipos técnicos.</p>
+          <div class="mt-9 flex flex-wrap justify-center gap-3">
+            <a href="https://github.com/Alan222-coder" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-cyan px-6 py-3 text-sm font-bold text-ink transition hover:bg-white">GitHub ↗</a>
+            <!-- Agregar aquí un enlace de LinkedIn o correo profesional cuando esté confirmado. -->
+          </div>
+          <p class="mt-7 font-mono text-[10px] tracking-wider text-slate-600">ALAN MONTERO · CÓRDOBA, ARGENTINA · 2026</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 py-7">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 text-center sm:flex-row sm:text-left lg:px-8">
+      <p class="text-xs text-slate-600">© 2026 Alan Montero. Portfolio personal.</p>
+      <p class="font-mono text-[10px] text-slate-600">SOFTWARE · SYSTEMS · ENGINEERING INTEREST</p>
+    </div>
+  </footer>
+
+  <script>
+    const progress = document.getElementById('progress');
+    function updateProgress() {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    updateProgress();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

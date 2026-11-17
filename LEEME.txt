@@ -1,0 +1,17 @@
+PORTFOLIO ALAN MONTERO — NETLIFY
+
+Estructura:
+- index.html
+- css/styles.css
+
+Publicación en Netlify:
+1. Descomprimí portfolio_alan_netlify.zip.
+2. Entrá a Netlify y abrí Add new site / Deploy manually.
+3. Arrastrá la carpeta portfolio_alan_netlify (o su contenido) al área de deploy.
+4. Netlify publicará el sitio usando index.html como página principal.
+
+Notas:
+- El CSS propio está separado en css/styles.css.
+- Tailwind CSS se carga desde CDN y la configuración de Tailwind permanece en index.html.
+- La tipografía se carga desde Google Fonts.
+- Revisá y completá los datos de contacto antes de compartir el sitio.
